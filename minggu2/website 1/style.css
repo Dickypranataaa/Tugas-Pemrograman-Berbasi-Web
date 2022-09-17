@@ -1,0 +1,9 @@
+*,
+html,
+body{
+    background-color: chocolate;
+  }
+
+.container-navbar {
+  background-color: #333;
+}
