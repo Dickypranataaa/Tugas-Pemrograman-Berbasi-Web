@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML 5 - Multimedia</title>
+    </head>
+    <body>
+        <h2>Video - HTML 5</h2>
+        <p>
+        <button type="button" onclick="playVid()">Play Button</button>
+        <button type="button" onclick="pauseVid()">Pause Video</button>
+        <button type="button" onclick="Duration()">Duration</button>
+        <button type="button" onclick="controlOn()">Control ON</button>
+        <button type="button" onclick="controlOff()">Control OFF</button>
+        </p>
+        <video width="420" id="myVideo">
+            <source src="media/video.mp4" type="video/mp4">
+        </video>
+        <p>
+        <button type="button" onclick="getVolume()">What is the volume?</button>
+        <button type="button" onclick="setHalfVolume()">Set volume to 0.2</button>
+        <button type="button" onclick="setFullVolume()">Set volume to 1.0</button>
+        </p>
+        <h2>
+            RABBIT
+        </h2>
+        <p>
+            rabbit, Any small, bounding, gnawing mammal of the family Leporidae. Rabbits have long ears, a short tail, long hind legs, and continuously growing incisors. Most species are gray or brown and range in size from 10 to 18 in. (25 to 45 cm) long and 1 to 4 lb (0.5 to 2 kg). They feed primarily on grasses. Their reproductive rate is very high; unlike hares, rabbits are born blind, hairless, and helpless. Most species are nocturnal and live alone in burrows. However, the European, or Old World, rabbit (Oryctolagus cuniculus; of Europe and Asia) lives in warrens consisting of many burrows; this species is the ancestor to all domestic breeds. The 13 North American species called cottontails (genus Sylvilagus) have white on the underside of the tail.
+        </p>
+    </body>
+    <script>
+        var vid = document.getElementById("myVideo");
+
+function playVid() {
+    vid.play();
+    vid.loop = true;
+}
+
+function pauseVid() {
+    vid.pause();
+} 
+
+function Duration() {
+    alert(vid.duration);
+}
+
+function controlOn() {
+    vid.controls = true;
+    vid.load();
+}
+
+function controlOff() {
+    vid.controls = false;
+    vid.load();
+}
+
+function getVolume() { 
+    alert(vid.volume);
+} 
+
+function setHalfVolume() {
+    vid.volume = "0.2";
+}
+  
+function setFullVolume() {
+    vid.volume = "1.0";
+}
+
+    </script>
+
+</html>
