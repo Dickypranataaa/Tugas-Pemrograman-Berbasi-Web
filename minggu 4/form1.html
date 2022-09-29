@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Belajar HTML 5</title>
+    </head>
+    <body>
+        <h1>Form - HTML 5</h1>
+        <p>Silahkah isi Form dibawah ini</p>
+        <form name="fmhs" method="POST" action="proses.php">
+            <table width="50%" border="0">
+                <tr>
+                    <td width="30%">Nama</td>
+                    <td>
+                    <input type="text" name="fnama" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Nim</td>
+                    <td><input type="number" name="fnim" required></td>
+                </tr>
+                <tr>
+                    <td>Kelompok</td>
+                    <td><input type="number" name="fkelompok" required></td>
+                </tr>
+                <tr>
+                    <td>Tanggal Lahir</td>
+                    <td><input type="date" name="ftgllhr" required></td>
+                </tr>
+                <tr>
+                    <td>Program Studi</td>
+                    <td>
+                    <select name="fprodi" required>
+                      <option value="">Pilih</option>
+                      <option value="10">Teknik Informatika - S1</option>
+                      <option value="11">Sistem Informasi - S1</option>
+                      <option value="12">Teknik Informatika - D3</option>
+                    </select>    
+                    </td>
+                </tr>
+                <tr>
+                    <td>Bidang Minat</td>
+                    <td>
+                        <input type="checkbox" name="fminat1" value="01"><label>Web Programming</label><br>
+                        <input type="checkbox" name="fminat2" value="02"><label>Mobile Programming</label><br>
+                        <input type="checkbox" name="fminat3" value="03"><label>Data Science</label><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Lampiran Proposal</td>
+                    <td><input type="file" name="fproposal" required></td>
+                </tr>
+            </table>
+            
+            <h2>Create Account</h2>
+            <p>Please enter your form</p>
+            <table>
+                <tr>
+                    <td>First Name</td>
+                    <td><input type="text" name="fdepan" required></td>
+                </tr>
+                <tr>
+                    <td>Last Name</td>
+                    <td><input type="text" name="fbelakang" required></td>
+                </tr>
+                <tr>
+                    <td>Username</td>
+                    <td><input type="type" name="fusername" required></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td><input type="email" name="fmail" required></td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td><input type="password" name="fpass" required></td>
+                </tr>
+                <tr>
+                    <td>Enter Password Again</td>
+                    <td><input type="password" name="fpass" required></td>
+                </tr>
+                <tr>
+                    <td>Phone Number</td>
+                    <td><input type="number" name="fhp" required></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" name="fsub" required>  <input type="reset" name="freset"></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
