@@ -1,0 +1,87 @@
+*, html {
+    box-sizing: border-box;
+}
+
+.body {
+    font-family: Georgia;
+    color: black;
+}
+
+
+.header {
+    background-color: rgb(0, 170, 255);
+    padding: 15px;
+    margin: 0;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
+
+.menu {
+    float: left;
+    width: 16%;
+    text-align: center;
+}
+
+
+.a-menu {
+    list-style-type: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    margin-top: 7px;
+    width: 50%;
+    color: black;
+}
+
+.a-menu:hover {
+    background-color: rgb(29, 104, 141);
+    transition: 0.5s ease-in-out;
+    transition-delay: 0.2s;
+    border-radius: 8px;
+}
+
+.article {
+    float: left;
+    width: 80%;
+    padding: 0 20px;
+    font-size: 16px;
+}
+
+.main {
+    overflow: auto;
+}
+
+.footer {
+    background-color: whitesmoke;
+    padding: 10px;
+    margin-top: 7px;
+
+}
+
+.image {
+    width: 5%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.h2 {
+    align-items: center;
+}
+
+.text-align {
+    text-align: center;
+}
+
+.border {
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    text-align: center;
+    width: 25%;
+}
